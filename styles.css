@@ -1,3 +1,35 @@
+body{
+	background-color: #9eafaf;
+	padding: 0px;
+    margin: 0px;
+}
+p, li, h2, h3{
+	font-family: 'Merriweather', serif;
+}
 .centeredText {
 	text-align:center;
+	font-family: 'Londrina Solid', cursive;
+}
+.flex-row{
+	background-color: #f9f9f9;
+	padding:0px 20px 0px 20px;
+	margin:0px 5px 0px 5px;
+}
+#layout{
+	display:flex;
+}
+nav#topMenu {
+    background-color: black;
+    color: white;
+    margin: 5px;
+    padding: 10px;
+}
+li.horizontal {
+    display: inline;
+}
+div#mainContent {
+    min-height: 95vh;
+}
+div.sideMenu {
+    width: 350px;
 }
