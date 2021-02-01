@@ -35,14 +35,13 @@ a.sideMenuLink{
 }
 nav#topMenu {
     position: fixed;
-    width: calc(100vw - (100vw - 100%));
+    width: calc(100% - 30px);
     height: 20px;
     background-color: black;
     color: white;
     margin: 0px 5px 5px 5px;
     padding: 10px;
     z-index: 1;
-    /* top: -20px; */
 }
 li.horizontal {
     display: inline;
