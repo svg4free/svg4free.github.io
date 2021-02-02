@@ -1,0 +1,45 @@
+:root{
+	--client-width:100vw;
+	--default-margin:15px;
+	--margin-adjustment:calc(2*var(--default-margin));
+	--menu-height:30px;
+	--second-row-top:calc(var(--menu-height) + var(--default-margin));
+	--side-column-width:calc(0.20*var(--client-width) - var(--margin-adjustment));
+	--main-column-width:calc(var(--client-width) - (var(--side-column-width)*2) - (var(--default-margin)*2) - var(--margin-adjustment));
+	--column1-left: var(--default-margin);
+	--column2-left: calc(var(--side-column-width) + (var(--default-margin))*2);
+	--column3-left: calc(var(--column2-left) + var(--main-column-width) + var(--default-margin));
+}
+
+*{
+	padding: 0px;
+	margin: 0px;
+	position: absolute;
+}
+.black{
+		background-color:black;
+}
+.secondRow{
+	top:var(--second-row-top);
+}
+.column{
+	height:600px;
+}
+#topMenu{
+	width:var(--client-width);
+	height:var(--menu-height);
+}
+#column1, #column3{
+	width:var(--side-column-width);
+}
+#column1{
+	left:var(--column1-left);
+}
+#column2{
+	width:var(--main-column-width);
+	left:var(--column2-left);
+	height:1100px;
+}
+div#column3{
+	left:var(--column3-left);
+}

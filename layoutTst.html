@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head><link rel="stylesheet" href="layoutTest.css"></head>
+<body>
+
+	<div id="topMenu" class="black"></div>
+	<div id="column1" class="column black secondRow"></div>
+	<div id="column2" class="column black secondRow"></div>
+	<div id="column3" class="column black secondRow"></div>
+
+</body>
+<script>
+	function windowResize(e){
+		if (e.type == "load"){
+			console.log(e.type);
+			newStylesheet = document.createElement("style");
+			newStylesheet.id = "mySheet";
+			document.head.appendChild(newStylesheet);
+		}
+		else {
+			document.getElementById("mySheet").sheet.deleteRule(0);
+		}
+		newStylesheet.sheet.insertRule(":root{--client-width:" + document.documentElement.clientWidth + "px;}");
+	}
+	window.addEventListener("load", windowResize);
+	window.addEventListener("resize", windowResize);
+</script>
+</html>
