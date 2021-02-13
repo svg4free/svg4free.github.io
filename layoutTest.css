@@ -1,23 +1,28 @@
 :root{
-	--client-width:100vw;
+	--default-border-size:1px;
 	--default-margin:15px;
 	--margin-adjustment:calc(2*var(--default-margin));
 	--menu-height:30px;
 	--second-row-top:calc(var(--menu-height) + var(--default-margin));
-	--side-column-width:calc(0.20*var(--client-width) - var(--margin-adjustment));
-	--main-column-width:calc(var(--client-width) - (var(--side-column-width)*2) - (var(--default-margin)*2) - var(--margin-adjustment));
+	--side-column-width:calc(20% - var(--margin-adjustment) - 2*var(--default-border-size));
+	--main-column-width:calc(100% - (var(--side-column-width)*2) - (var(--default-margin)*2) - var(--margin-adjustment) - 2*var(--default-border-size));
 	--column1-left: var(--default-margin);
 	--column2-left: calc(var(--side-column-width) + (var(--default-margin))*2);
 	--column3-left: calc(var(--column2-left) + var(--main-column-width) + var(--default-margin));
+}
+ol {
+list-style-position: inside;
 }
 
 *{
 	padding: 0px;
 	margin: 0px;
+}
+.layout {
 	position: absolute;
 }
 .black{
-		background-color:black;
+		border:solid var(--default-border-size) black;
 }
 .secondRow{
 	top:var(--second-row-top);
@@ -25,8 +30,13 @@
 .column{
 	height:600px;
 }
+.article{
+	width:100%;
+	min-height:200px;
+}
 #topMenu{
-	width:var(--client-width);
+	position:fixed;
+	width:calc(100% - 2*var(--default-border-size));
 	height:var(--menu-height);
 }
 #column1, #column3{
