@@ -1,5 +1,5 @@
 const xhr = new XMLHttpRequest;
-url = window.location.hash.split(#)[1];
+url = window.location.hash.split("#")[1];
 history.replaceState(null, "", "/" + url);
 
 function loadArticle(){
