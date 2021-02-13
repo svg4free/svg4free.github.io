@@ -15,7 +15,7 @@ function loadArticle(){
   }
 }
 
-xhr.open("GET", window.location.href + url + ".article", true);
+xhr.open("GET", window.location.hostname + "/" + url + ".article", true);
 xhr.onreadystatechange = loadArticle;
 xhr.responseType = "document";
 xhr.send();
