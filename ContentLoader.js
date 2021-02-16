@@ -1,4 +1,4 @@
-const xhr = new XMLHttpRequest;
+var xhr = new XMLHttpRequest;
 url = window.location.hash.split("#")[1];
 history.replaceState(null, "", "/" + url);
 
