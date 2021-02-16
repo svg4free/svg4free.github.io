@@ -8,6 +8,7 @@ function loadArticle(){
     if (status === 0 || (status >= 200 && status < 400)) {
       // The request has been completed successfully
       document.getElementById("column2").appendChild(xhr.responseXML.getElementById("mainContent"));
+	    document.getElementsByTagName("head")[0].appendChild(responseXML.getElementsByTagName("link")[0]);
     } else {
       // Oh no! There has been an error with the request!
 	  alert("Article has not been loaded");
