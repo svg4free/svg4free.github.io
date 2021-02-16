@@ -1,4 +1,4 @@
-xhr = new XMLHttpRequest;
+const xhr = new XMLHttpRequest;
 url = window.location.hash.split("#")[1];
 history.replaceState(null, "", "/" + url);
 
@@ -13,7 +13,6 @@ function loadArticle(){
 	  alert("Article has not been loaded");
     }
   }
-	delete window.xhr;
 }
 
 xhr.open("GET", window.location.origin + "/" + url + ".htm", true);
