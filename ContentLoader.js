@@ -7,7 +7,7 @@ function loadArticle(){
     var status = xhr.status;
     if (status === 0 || (status >= 200 && status < 400)) {
       // The request has been completed successfully
-      document.getElementById("column2").innerHTML = xhr.responseXML.getElementById("mainContent").innerHTML;
+      document.getElementById("column2").appendChild(xhr.responseXML.getElementById("mainContent"));
     } else {
       // Oh no! There has been an error with the request!
 	  alert("Article has not been loaded");
