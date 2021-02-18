@@ -1,6 +1,8 @@
 var xhr = new XMLHttpRequest;
 url = window.location.hash.split("#")[1];
-history.replaceState(null, "", "/" + url);
+if(url){
+	history.replaceState(null, "", "/" + url);
+}
 
 function loadArticle(){
 	if(xhr.readyState === XMLHttpRequest.DONE) {
