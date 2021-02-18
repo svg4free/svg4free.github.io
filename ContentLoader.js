@@ -1,5 +1,5 @@
 //This script only runs on the layout page
-//Check to see if there is a hash in the url
+//Check to see if there is a hash in the url. eg. https://svg4free.github.io/Layout#hash
 
 url = window.location.hash.split("#")[1];
 
