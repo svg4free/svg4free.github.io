@@ -1,18 +1,33 @@
+//This script only runs on the layout page
+//Check to see if there is a hash in the url
+
 url = window.location.hash.split("#")[1];
 
 function loadArticle(){
 	if(xhr.readyState === XMLHttpRequest.DONE) {
     var status = xhr.status;
     if (status === 0 || (status >= 200 && status < 400)) {
-      // The request has been completed successfully
+	// The request has been completed successfully
+	//Add the contenet to column 2 of Layout.html
       document.getElementById("column2").appendChild(xhr.responseXML.getElementById("mainContent"));
-	    document.getElementsByTagName("head")[0].appendChild(xhr.responseXML.getElementsByTagName("link")[0]);
     } else {
       // Oh no! There has been an error with the request!
 	  alert("Article has not been loaded");
     }
   }
 }
+
+function loadStylesheet(){
+	var ss = document.createElement("link");
+	ss.rel = "stylesheet";
+	ss.href = 'window.location.origin + "/" + url + ".css'
+	document.head.appendChild(ss);
+}
+
+//if there is a hash in the url:
+//change the url
+//load AJAX page content
+//load Stylesheet
 
 if(url){
 	var xhr = new XMLHttpRequest;
@@ -21,4 +36,5 @@ if(url){
 	xhr.onreadystatechange = loadArticle;
 	xhr.responseType = "document";
 	xhr.send();
+	loadStylesheet();
 }
