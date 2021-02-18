@@ -20,7 +20,7 @@ function loadArticle(){
 function loadStylesheet(){
 	var ss = document.createElement("link");
 	ss.rel = "stylesheet";
-	ss.href = 'window.location.origin + "/" + url + ".css'
+	ss.href = window.location.origin + "/" + url + ".css;
 	document.head.appendChild(ss);
 }
 
