@@ -1,4 +1,3 @@
-var xhr = new XMLHttpRequest;
 url = window.location.hash.split("#")[1];
 
 function loadArticle(){
@@ -16,6 +15,7 @@ function loadArticle(){
 }
 
 if(url){
+	var xhr = new XMLHttpRequest;
 	history.replaceState(null, "", "/" + url);
 	xhr.open("GET", window.location.origin + "/" + url + ".htm", true);
 	xhr.onreadystatechange = loadArticle;
