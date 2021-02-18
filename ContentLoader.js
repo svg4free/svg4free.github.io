@@ -9,7 +9,7 @@ function loadArticle(){
     if (status === 0 || (status >= 200 && status < 400)) {
 	// The request has been completed successfully
 	//Add the contenet to column 2 of Layout.html
-      document.getElementById("column2").appendChild(xhr.responseXML.getElementById("mainContent"));
+	document.getElementById("column2").appendChild(xhr.responseXML.getElementById("mainContent"));
     } else {
       // Oh no! There has been an error with the request!
 	  alert("Article has not been loaded");
