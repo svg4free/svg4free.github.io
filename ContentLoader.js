@@ -1,8 +1,5 @@
 var xhr = new XMLHttpRequest;
 url = window.location.hash.split("#")[1];
-if(url){
-	history.replaceState(null, "", "/" + url);
-}
 
 function loadArticle(){
 	if(xhr.readyState === XMLHttpRequest.DONE) {
@@ -18,7 +15,10 @@ function loadArticle(){
   }
 }
 
-xhr.open("GET", window.location.origin + "/" + url + ".htm", true);
-xhr.onreadystatechange = loadArticle;
-xhr.responseType = "document";
-xhr.send();
+if(url){
+	history.replaceState(null, "", "/" + url);
+	xhr.open("GET", window.location.origin + "/" + url + ".htm", true);
+	xhr.onreadystatechange = loadArticle;
+	xhr.responseType = "document";
+	xhr.send();
+}
