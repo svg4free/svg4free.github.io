@@ -14,10 +14,12 @@ function loadArticle(){
 		var links = xhr.responseXML.getElementsByTagName("link");
 		var scripts = xhr.responseXML.getElementsByTagName("script");
 		for (i = 0; i < links.length; i++){
+			links[i].href = location.origin + "/" + url + "/" + links[i].href;
 			document.head.appendChild(links[i]);
 		}
 	
 		for (i = 0; i < scripts.length; i++){
+			scripts[i].src = location.origin + "/" + url + "/" + links[i].src;
 			document.head.appendChild(scripts[i]);
 		}
     } else {
