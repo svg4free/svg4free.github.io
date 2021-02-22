@@ -14,6 +14,7 @@ function loadArticle(){
 		var links = xhr.responseXML.getElementsByTagName("link");
 		var scripts = xhr.responseXML.getElementsByTagName("script");
 		for (i = 0; i < links.length; i++){
+			links[i].href = links[i].href;
 			document.head.appendChild(links[i]);
 		}
 	
