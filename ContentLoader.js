@@ -19,6 +19,7 @@ function loadArticle(){
 		}
 	
 		for (i = 0; i < scripts.length; i++){
+			scripts[i].src = scripts[i].src;
 			document.head.appendChild(scripts[i]);
 		}
     } else {
