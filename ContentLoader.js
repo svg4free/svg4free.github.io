@@ -29,8 +29,9 @@ if(xhr.readyState === XMLHttpRequest.DONE) {
 	
 		if (scripts.length){
 			for (i = 0; i < scripts.length; i++){
-				scripts[i].src = scripts[i].src;
-				document.head.appendChild(scripts[i]);
+				var _script = document.createElement("script");
+				_script.setAttribute("src", scripts[i].src);
+				document.body.appendChild(_script);
 			}
 		}
     } else {
