@@ -1,3 +1,4 @@
+  
 //This script only runs on the layout page
 //Check to see if there is a hash in the url. eg. https://svg4free.github.io/Layout#hash
 
@@ -17,11 +18,21 @@ function loadArticle(){
   }
 }
 
-function loadStylesheet(){
-	var ss = document.createElement("link");
-	ss.rel = "stylesheet";
-	ss.href = window.location.origin + "/" + url + ".css";
-	document.head.appendChild(ss);
+function loadResources(){
+	//var ss = document.createElement("link");
+	//ss.rel = "stylesheet";
+	//ss.href = window.location.origin + "/" + url + ".css";
+	//document.head.appendChild(ss);
+	
+	var links = xhr.responseXML.getElementsByTagName("link");
+	for (i = 0; i < links.length; i++){
+		document.head.appendChild(links[i]);
+	}
+	
+	var scripts = xhr.responseXML.getElementsByTagName("script");
+	for (i = 0; i < scripts.length; i++){
+		document.head.appendChild(scripts[i]);
+	}
 }
 
 //if there is a hash in the url:
@@ -32,9 +43,9 @@ function loadStylesheet(){
 if(url){
 	var xhr = new XMLHttpRequest;
 	history.replaceState(null, "", "/" + url);
-	xhr.open("GET", window.location.origin + "/" + url + ".htm", true);
+	xhr.open("GET", window.location.origin + "/" + url + "/content.html", true);
 	xhr.onreadystatechange = loadArticle;
 	xhr.responseType = "document";
 	xhr.send();
-	loadStylesheet();
+	loadResources();
 }
