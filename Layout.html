@@ -1,17 +1,19 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Layout</title>
-	<link rel="stylesheet" href="layoutTest.css">
-</head>
-<body>
-
-	<div id="topMenu" class="black"></div>
-	<div id="column1" class="layout column black secondRow"></div>
-	<div id="column2" class="layout column black secondRow">
-	</div>
-	<div id="column3" class="layout column black secondRow"></div>
-
-</body>
-<script src="ContentLoader.js"></script>
+<html><head><link rel="stylesheet" href="layoutTest.css"><link rel="stylesheet"></head>
+	<body>
+		<div id="topMenu" class="black"></div>
+			<div id="column1" class="layout column black secondRow sideMenu">
+				<a class="sideMenuLink" href="#"> Basic SVGs</a>
+				<a class="sideMenuLink" href="#"> Projects</a>
+				<a class="sideMenuLink" href="#"> Video Tutorials</a>
+				<a class="sideMenuLink" href="#"> Articles</a>
+		</div>
+		<div id="column2" class="layout column black secondRow">
+		</div>
+			<div id="column3" class="layout column black secondRow sideMenu">
+			<div id="adSpace">
+				Ad Space
+			</div>
+		</div>
+		<script src="ContentLoader.js"></script>
+	</body>
 </html>
