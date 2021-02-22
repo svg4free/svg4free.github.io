@@ -3,8 +3,6 @@
 //Check to see if there is a hash in the url. eg. https://svg4free.github.io/Layout#hash
 
 url = window.location.hash.split("#")[1];
-var links;
-var scripts;
 
 function loadArticle(){
 	if(xhr.readyState === XMLHttpRequest.DONE) {
@@ -13,34 +11,21 @@ function loadArticle(){
 		// The request has been completed successfully
 		//Add the contenet to column 2 of Layout.html
 		document.getElementById("column2").appendChild(xhr.responseXML.getElementById("mainContent"));
-		links = xhr.responseXML.getElementsByTagName("link");
-		scripts = xhr.responseXML.getElementsByTagName("script");
+		var links = xhr.responseXML.getElementsByTagName("link");
+		var scripts = xhr.responseXML.getElementsByTagName("script");
+		for (i = 0; i < links.length; i++){
+			document.head.appendChild(links[i]);
+		}
+	
+		for (i = 0; i < scripts.length; i++){
+			document.head.appendChild(scripts[i]);
+		}
     } else {
 		// Oh no! There has been an error with the request!
 		alert("Article has not been loaded");
     }
   }
 }
-
-function loadResources(){
-	//var ss = document.createElement("link");
-	//ss.rel = "stylesheet";
-	//ss.href = window.location.origin + "/" + url + ".css";
-	//document.head.appendChild(ss);
-	
-	for (i = 0; i < links.length; i++){
-		document.head.appendChild(links[i]);
-	}
-	
-	for (i = 0; i < scripts.length; i++){
-		document.head.appendChild(scripts[i]);
-	}
-}
-
-//if there is a hash in the url:
-//change the url
-//load AJAX page content
-//load Stylesheet
 
 if(url){
 	var xhr = new XMLHttpRequest;
@@ -49,5 +34,4 @@ if(url){
 	xhr.onreadystatechange = loadArticle;
 	xhr.responseType = "document";
 	xhr.send();
-	loadResources();
 }
