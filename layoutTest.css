@@ -66,6 +66,8 @@ div#adSpace {
     justify-content: center;
     align-items: center;
     border: dashed 1px black;
+    width: var(--side-column-width);
+    position: fixed;
 }
 
 body {
