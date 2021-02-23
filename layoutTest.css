@@ -28,7 +28,7 @@ list-style-position: inside;
 	top:var(--second-row-top);
 }
 .column{
-	min-height: 1100px;
+	min-height: calc(100% - var(--second-row-top) - var(--default-margin));
 	background-color: white;
 }
 .article{
@@ -57,12 +57,19 @@ div#column3{
 }
 
 a.sideMenuLink {
-    display: block;text-decoration: none;color: blue;text-align: center;
+    display: block;
+    text-decoration: none;
+    color: lime;
+    text-align: center;
+}
+
+a.sideMenuLink:hover {
+    color: black;
 }
 
 div#adSpace {
     display: flex;
-    height: 20vw;
+    height: calc(100% - var(--second-row-top) - var(--default-margin));
     justify-content: center;
     align-items: center;
     border: dashed 1px black;
@@ -71,5 +78,5 @@ div#adSpace {
 }
 
 body {
-    background-color: whitesmoke;
+    background-color: white;
 }
