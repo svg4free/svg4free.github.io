@@ -10,23 +10,23 @@
 	</p><ol>
 		<li>In the top inkscape menu click on edit &gt; select all in all layers</li>
 		<li>Next click object from the top menu and click Transform</li>
-		<img src="\Inkscape2.png">
+		<img src="Inkscape2.png">
 		<li>In the dialog that comes up on the right side make sure scale proportionally is checked. Set the units to % and change one of the boxes to 75%. press enter/return and the other box will change to 75% also. Click Apply, then save the file.
-		<img src="\Inkscape3.png">
+		<img src="Inkscape3.png">
 	</li></ol>
 	<h3>Add a custom unit to inkscape and make a template file:</h3>
 	<p>This is my preferred method, you don't have to make changes to the viewport here which is beneficial if you use inkscape for anything else.</p>
 	<ol>
 		<li>Find and open the units.xml file. On a windows system the location of this file depends on how you installed it. If you used an installer like the exe or msi files This file will be in C:\Program Files\Inkscape or C:\Program Files (x86)\inkscape. If you used the portable package, open the folder that you unzipped the package to after you downloaded it. The rest of the process is the same for each version. Open the share folder, then open inkscape, from there open the ui folder and open the file units.xml</li>
 		<p>If you don't have a program installed that can open xml files already, this file will probably try to load in your web browser and we don't want that, so instead of double clicking the file, right click and select open with then notepad</p>
-		<img src="\Inkscape5.png">
+		<img src="Inkscape5.png">
 		<li>Create a new unit. In this tutorial I'll be copying the inch unit but you can apply this to any unit you want to use.</li>
 		<p>If you aren't familiar with xml files basically they use tags to store data so you will see tags like this: <span class="red">opening tag:</span>&lt;&gt;<span class="red">closing tag:</span>&lt;/&gt;</p>
 		<p>We're going to copy one of the units tags and just change the scaling.</p>
 		<p>In the xml file look for the inch unit, select all the text for that unit starting with &gt;unit&lt; and ending with &gt;/unit&lt;</p>
-		<img src="\Inkscape6.png">
+		<img src="Inkscape6.png">
 		<p>copy that text and paste it directly after one of the &gt;/unit&lt; tags on a new line</p>
-		<img src="\Inkscape7.png">
+		<img src="Inkscape7.png">
 		<p>As you can see in the photo, in my file, I've changed the name of the unit that I pasted to jeff, plural to jeffs and the abbreviation to jf. You can use whatever you want for those tags, the important part is the factor tag. For cricut design space, this is 72.0. I changed the description to show "Inches (72 px/jf)" but this optional, you don't even really need to change that and it has no effect on the unit.</p>
 		<p>If you aren't comfortable editing this file yourself you can download a copy of my file here <a href="#">units.xml</a></p>
 	</ol>
