@@ -14,6 +14,9 @@
 	:root{
 		--main-column-width:calc(100% - (var(--side-column-width)) - (var(--default-margin)*2) - var(--margin-adjustment) - 2*var(--default-border-size));
 	}
+	p, ol, li, div, h1, h2, h3{
+		font-size: calc(1em*(16/9));
+	}
 }
 ol {
 list-style-position: inside;
