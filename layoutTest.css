@@ -13,6 +13,7 @@
 @media (orientation:portrait){
 	:root{
 		--main-column-width:calc(100% - (var(--side-column-width)) - (var(--default-margin)*2) - var(--margin-adjustment) - 2*var(--default-border-size));
+		--menu-height:53px;
 	}
 	html{
 		font-size:178%
