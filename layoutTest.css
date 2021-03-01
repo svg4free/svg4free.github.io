@@ -52,6 +52,11 @@ list-style-position: inside;
 	width: var(--main-column-width);
 	left:var(--column2-left);
 }
+@media (orientation:portrait){
+	#column2{
+		display:none;
+	}
+}
 div#column3{
 	left:var(--column3-left);
 }
