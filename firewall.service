@@ -1,9 +1,0 @@
-[Unit]
-Description=Firewall
-
-[Service]
-Type=oneshot
-ExecStart=/etc/router/firewall
-
-[Install]
-WantedBy=multi-user.target
