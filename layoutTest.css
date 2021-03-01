@@ -58,7 +58,7 @@ list-style-position: inside;
 	left:var(--column2-left);
 }
 @media (orientation:portrait){
-	#column2{
+	#column3{
 		display:none;
 	}
 }
