@@ -10,6 +10,11 @@
 	--column2-left: calc(var(--side-column-width) + (var(--default-margin))*2);
 	--column3-left: calc(var(--column2-left) + var(--main-column-width) + var(--default-margin));
 }
+@media (orientation:portrait){
+	:root{
+		--main-column-width:calc(100% - (var(--side-column-width)) - (var(--default-margin)*2) - var(--margin-adjustment) - 2*var(--default-border-size));
+	}
+}
 ol {
 list-style-position: inside;
 }
