@@ -10,6 +10,13 @@
 	--column2-left: calc(var(--side-column-width) + (var(--default-margin))*2);
 	--column3-left: calc(var(--column2-left) + var(--main-column-width) + var(--default-margin));
 }
+
+#logo{
+        margin-top:2.5px;
+        margin-left:10px;
+        height:25px;
+}
+
 @media (orientation:portrait){
 	:root{
 		--main-column-width:calc(100% - (var(--side-column-width)) - (var(--default-margin)*2) - var(--margin-adjustment) - 2*var(--default-border-size));
@@ -30,12 +37,6 @@
    		padding-bottom: 20px;
 	}
 }
-
-#logo{
-        margin-top:2.5px;
-        margin-left:10px;
-        height:25px;
-    }
 
 ol {
 list-style-position: inside;
