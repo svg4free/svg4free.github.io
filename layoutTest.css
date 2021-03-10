@@ -21,6 +21,11 @@
 	#logo{
         	height:48px;
     	}
+		a.sideMenuLink {
+   		border-bottom: solid 1px black;
+   		padding-top: 20px;
+   		padding-bottom: 20px;
+	}
 }
 
 #logo{
