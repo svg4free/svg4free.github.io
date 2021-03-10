@@ -23,7 +23,7 @@
     	}
 }
 
-@media (anyhover:none){
+@media (hover:none){
 	a.sideMenuLink {
    		border-bottom: solid 1px black;
    		padding-top: 20px;
