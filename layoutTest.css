@@ -18,7 +18,17 @@
 	html{
 		font-size:178%
 	}
+	#logo{
+        	height:48px;
+    	}
 }
+
+#logo{
+        margin-top:2.5px;
+        margin-left:10px;
+        height:25px;
+    }
+
 ol {
 list-style-position: inside;
 }
