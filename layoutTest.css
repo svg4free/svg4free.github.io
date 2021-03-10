@@ -38,6 +38,12 @@
 	}
 }
 
+@media (hover:hover) {
+	a.sideMenuLink:hover {
+    		color: black;
+	}
+}
+
 ol {
 list-style-position: inside;
 }
@@ -94,10 +100,6 @@ a.sideMenuLink {
     text-decoration: none;
     color: lime;
     text-align: center;
-}
-
-a.sideMenuLink:hover {
-    color: black;
 }
 
 div#adSpace {
