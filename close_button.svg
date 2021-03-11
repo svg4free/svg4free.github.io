@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="11.5in"
+   height="11.5in"
+   viewBox="0 0 828 828"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+   sodipodi:docname="close_button.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.67521728"
+     inkscape:cx="456.89791"
+     inkscape:cy="445.71429"
+     inkscape:document-units="in"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     units="in"
+     inkscape:window-width="1267"
+     inkscape:window-height="954"
+     inkscape:window-x="499"
+     inkscape:window-y="38"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="rect43"
+       style="fill:#000000;stroke-width:0.96;fill-opacity:0.46586347"
+       d="M 233.56445 266.58008 C 224.78033 266.58008 217.70703 273.65338 217.70703 282.4375 L 217.70703 441.77539 C 217.70703 450.5595 224.78033 457.63086 233.56445 457.63086 L 392.90234 457.63086 C 401.68645 457.63086 408.75781 450.5595 408.75781 441.77539 L 408.75781 282.4375 C 408.75781 273.65338 401.68645 266.58008 392.90234 266.58008 L 233.56445 266.58008 z M 254.96484 291.51172 L 277.21289 291.51172 L 302.83203 327.72266 C 308.16111 335.23473 311.94811 341.01363 314.19531 345.05859 C 317.34139 339.92213 321.0654 334.5605 325.36719 328.97461 L 353.7793 291.51172 L 374.09961 291.51172 L 324.5 358.06055 L 377.95117 432.69922 L 354.83789 432.69922 L 319.30078 382.33008 C 317.31041 379.44082 315.25551 376.29548 313.13672 372.89258 C 309.99064 378.02903 307.74285 381.56015 306.39453 383.48633 L 270.95312 432.69922 L 248.51367 432.69922 L 303.11914 359.11914 L 254.96484 291.51172 z "
+       transform="scale(0.75)" />
+  </g>
+</svg>
