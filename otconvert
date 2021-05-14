@@ -1,7 +1,0 @@
-#!/bin/sh
-scale="scale=4;"
-now=$(date +%s)
-hours=$(echo "$scale($1 - $date)/3600" | bc)
-minutes=$(echo $scale$("$hours" | cut -d "." -f 2)*60 | bc)
-seconds=$(echo "scale=0;"$("$minutes" | cut -d "." -f 2)*60 | bc)
-echo $"($hours | cut -d "." -f1)h $($minutes | cut -d "." f1)m $seconds"
