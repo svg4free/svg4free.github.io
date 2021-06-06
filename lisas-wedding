@@ -1,0 +1,4 @@
+<!DOCTYPE html>
+<script>
+  window.location.replace(window.location.href + "/wedding.zip");
+</script>
