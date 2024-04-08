@@ -54,7 +54,7 @@ if(xhr.readyState === XMLHttpRequest.DONE) {
 
 if(url){
 	var xhr = new XMLHttpRequest;
-	//history.replaceState(null, "", "/" + url);
+	history.replaceState(null, "", "/");
 	xhr.open("GET", window.location.origin + "/" + url + "/content.html", true);
 	xhr.onreadystatechange = loadArticle;
 	xhr.responseType = "document";
